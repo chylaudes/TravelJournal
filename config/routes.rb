@@ -1,4 +1,20 @@
 Rails.application.routes.draw do
+  get 'entries/new'
+
+  get 'entries/create'
+
+  get 'entries/edit'
+
+  get 'entries/destroy'
+
+  get 'trips/new'
+
+  get 'trips/create'
+
+  get 'trips/edit'
+
+  get 'trips/destroy'
+
   get 'static_pages/home'
 
   get 'static_pages/about'
