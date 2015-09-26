@@ -1,17 +1,11 @@
-# == Schema Information
-#
-# Table name: trips
-#
-#  id          :integer          not null, primary key
-#  destination :string
-#  created_at  :datetime         not null
-#  updated_at  :datetime         not null
-#
-
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  destination: MyString
+  startdate: 2015-09-25 18:44:25
+  enddate: 2015-09-25 18:44:25
+  location: MyString
 
 two:
-  destination: MyString
+  startdate: 2015-09-25 18:44:25
+  enddate: 2015-09-25 18:44:25
+  location: MyString
