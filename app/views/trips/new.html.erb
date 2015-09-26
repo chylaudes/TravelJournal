@@ -1,2 +1,19 @@
-<h1>Trips#new</h1>
-<p>Find me in app/views/trips/new.html.erb</p>
+<h1>Start a Trip</h1>
+<%= form_for :trip, url: trips_path do |f| %>  <p>
+    <%= f.label :startdate %><br>
+    <%= f.text_field :startdate %>
+  </p>
+
+  <p>
+    <%= f.label :enddate %><br>
+    <%= f.text_field :enddate %>
+  </p>
+
+  <p>
+    <%= f.label :location %><br>
+    <%= f.text_field :location %>
+  </p>
+  <p>
+    <%= f.submit %>
+</p>
+<% end %>

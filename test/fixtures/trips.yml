@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  startdate: 2015-09-25 18:44:25
-  enddate: 2015-09-25 18:44:25
+  start_date: 2015-09-25
+  end_date: 2015-09-25
   location: MyString
 
 two:
-  startdate: 2015-09-25 18:44:25
-  enddate: 2015-09-25 18:44:25
+  start_date: 2015-09-25
+  end_date: 2015-09-25
   location: MyString
