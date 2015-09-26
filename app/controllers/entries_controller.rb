@@ -3,7 +3,6 @@ class EntriesController < ApplicationController
   end
 
   def create
-    
   end
 
   def edit
