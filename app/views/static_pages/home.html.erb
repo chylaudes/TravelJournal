@@ -5,10 +5,5 @@ body {text-align: center; margin-top: 150px;}
 <h1>Welcome to TravelJournal</h1>
 <h4>Plan & document your travels, all in one place.</h4>
 <br><br>
-<button type="button" class="btn btn-info">New Trip</button>
-<button type="button" class="btn btn-info">Current Trip</button>
-
-
-<%= button_to "New Trip", trips_path,
-      :class => "inbox-sf-add-btn tip", :method => :get %>
-</div>
+<%= link_to 'New Trip', controller: 'new_trip_path' %>
+<!--- <%= link_to 'Current Trip', controller: 'trips' %>

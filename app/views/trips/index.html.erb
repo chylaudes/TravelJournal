@@ -1,0 +1,15 @@
+<h1>Listing Trips</h1>
+<table>
+  <tr>
+    <th>Start_date</th>
+    <th>End_date</th>
+    <th>Location</th>
+  </tr>
+  <% @trips.each do |trip| %>
+  <tr>
+    <td><%= trip.start_date %></td>
+    <td><%= trip.end_date %></td>
+    <td><%= trip.location %></td>
+  </tr>
+  <% end %>
+</table>

@@ -1,11 +1,26 @@
 <h1>Start a Trip</h1>
 <%= form_for :trip, url: trips_path do |f| %>  <p>
-    <%= f.label :startdate %><br>
+
+  <% if @article.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@article.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h2>
+      <ul>
+        <% @article.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <%= f.label :start_date %><br>
     <%= f.text_field :startdate %>
   </p>
 
   <p>
-    <%= f.label :enddate %><br>
+    <%= f.label :end_date %><br>
     <%= f.text_field :enddate %>
   </p>
 
