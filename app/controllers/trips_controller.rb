@@ -44,6 +44,6 @@ end
 
 private
   def trip_params
-    params.require(:trip).permit(:start_date,:end_date, :location)
+    params.require(:trip).permit(:start_date,:end_date,:location)
   end
 end
