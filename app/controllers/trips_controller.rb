@@ -1,10 +1,11 @@
 class TripsController < ApplicationController
+
   def index
-    @rips = Trip.all
+    @trips = Trip.all
   end
 
   def show
-    @article = Trip.find(params[:id])
+    @trip = Trip.find(params[:id])
   end
 
   def new
@@ -44,6 +45,6 @@ end
 
 private
   def trip_params
-    params.require(:trip).permit(:start_date,:end_date, :location)
+    params.require(:trip).permit(:start_date,:end_date,:location)
   end
 end

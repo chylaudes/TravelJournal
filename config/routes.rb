@@ -7,13 +7,13 @@ Rails.application.routes.draw do
 
   get 'entries/destroy'
 
-  get 'entries/new'
+  #get 'entries/new'
 
-  get 'entries/create'
+  #get 'entries/create'
 
-  get 'entries/edit'
+  #get 'entries/edit'
 
-  get 'entries/destroy'
+  #get 'entries/destroy'
 
   get 'trips/new'
 
