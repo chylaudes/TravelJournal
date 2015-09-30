@@ -1,0 +1,17 @@
+<%= form_for([@trip, @trip.entries.build]) do |f| %>
+  <p>
+    <%= f.label :date %><br>
+    <%= f.text_field :date %>
+  </p>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :journal_entry %><br>
+    <%= f.text_field :journal_entry %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

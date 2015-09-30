@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150930203616) do
+ActiveRecord::Schema.define(version: 20150930215754) do
 
   create_table "entries", force: :cascade do |t|
     t.date     "date"
     t.string   "title"
-    t.string   "entry"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.text     "journal_entry"
   end
 
   create_table "trips", force: :cascade do |t|

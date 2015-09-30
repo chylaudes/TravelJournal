@@ -1,0 +1,17 @@
+<p>
+  <strong>Date:</strong>
+  <%= entry.date %>
+</p>
+<p>
+  <strong>Title:</strong>
+  <%= entry.title %>
+</p>
+<p>
+  <strong>Entry:</strong>
+  <%= entry.journal_entry %>
+</p>
+<p>
+  <%= link_to 'Delete Entry', [entry.trip, entry],
+               method: :delete,
+               data: { confirm: 'Are you sure you want to delete this entry?' } %>
+</p>

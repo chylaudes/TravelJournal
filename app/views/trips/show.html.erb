@@ -11,5 +11,14 @@
   <%= @trip.location %>
 </p>
 
+<h2>Entries</h2>
+  <%= render @trip.entries %>
+
+<h2>Add a Journal Entry:</h2>
+  <%= render 'entries/form' %>
+      <%= f.submit %>
+    </p>
+  <% end %>
+
   <%= link_to 'Edit', edit_trip_path %>
   <%= link_to 'All Trips', trips_path %>
