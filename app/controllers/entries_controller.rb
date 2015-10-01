@@ -20,6 +20,6 @@ class EntriesController < ApplicationController
 
   private
     def entry_params
-      params.require(:entry).permit(:date, :title)
+      params.require(:entry).permit(:date, :title, :journal_entry)
     end
 end
