@@ -12,7 +12,26 @@
 </p>
 
 <p>
-  <%= @forecast %>
+  <% w_api = Wunderground.new %>
+  <% @weather = w_api.forecast_for(@trip.location) %>
+  <% @forecast = @weather["forecast"]["txt_forecast"]["forecastday"] %>
+
+  <%= @forecast.at(0)["title"]+":" %>
+  <%= @forecast.at(0)["fcttext"] %>
+  <%= image_tag(@forecast.at(0)["icon_url"]) %>
+  <br>
+  <%= @forecast.at(2)["title"]+":" %>
+  <%= @forecast.at(2)["fcttext"] %>
+  <%= image_tag(@forecast.at(2)["icon_url"]) %>
+  <br>
+  <%= @forecast.at(4)["title"]+":" %>
+  <%= @forecast.at(4)["fcttext"] %>
+  <%= image_tag(@forecast.at(4)["icon_url"]) %>
+  <br>
+  <%= @forecast.at(6)["title"]+":" %>
+  <%= @forecast.at(6)["fcttext"] %>
+  <%= image_tag(@forecast.at(6)["icon_url"]) %>
+
 </p>
 
 <h2>Entries</h2>

@@ -4,7 +4,7 @@ class EntriesController < ApplicationController
 
   def create
     @trip = Trip.find(params[:trip_id])
-    @entry = @trip.jouranentries.create(entry_params)
+    @entry = @trip.entries.create(entry_params)
     redirect_to trip_path(@trip)
   end
 
@@ -13,13 +13,13 @@ class EntriesController < ApplicationController
 
   def destroy
     @trip = Trip.find(params[:trip_id])
-    @entry = @trip.entries.find(params[:id]) 
+    @entry = @trip.entries.find(params[:id])
     @entry.destroy
     redirect_to trip_path(@trip)
   end
 
   private
     def entry_params
-      params.require(:journal_entry).permit(:date, :title)
+      params.require(:entry).permit(:date, :title)
     end
 end
