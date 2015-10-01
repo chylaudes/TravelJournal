@@ -6,6 +6,8 @@ class TripsController < ApplicationController
 
   def show
     @trip = Trip.find(params[:id])
+    w_api = Wunderground.new("de76b5fb9d1666a9")
+    @weather = w_api.forecast_for("WA","Spokane")
   end
 
   def new

@@ -26,6 +26,7 @@ group :development, :test do
   gem 'better_errors'
   gem 'annotate'
   gem 'spring'
+  gem 'wunderground'
 end
 
 # group :production do
