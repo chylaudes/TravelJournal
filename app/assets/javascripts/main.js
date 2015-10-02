@@ -1,5 +1,4 @@
 $(document).on('ready',function(){
-  $('#calendar').fullCalendar(
-    events: '/events.json'
-  );
+  $('#calendar').fullCalendar();
+  console.log("HY");
 });

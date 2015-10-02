@@ -32,11 +32,11 @@ ActiveRecord::Schema.define(version: 20151002184413) do
   end
 
   create_table "trips", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string   "location"
     t.date     "start_date"
     t.date     "end_date"
+    t.string   "location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

@@ -17,6 +17,9 @@ gem 'devise'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'momentjs-rails'
+gem 'fullcalendar-rails', '~> 2.0.2.0'
+
 
 group :development, :test do
   gem 'byebug'
@@ -27,7 +30,6 @@ group :development, :test do
   gem 'annotate'
   gem 'spring'
   gem 'wunderground'
-  gem 'fullcalendar-rails'
 end
 
 # group :production do
