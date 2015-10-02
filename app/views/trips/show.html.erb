@@ -31,8 +31,9 @@
   <%= @forecast.at(6)["title"]+":" %>
   <%= @forecast.at(6)["fcttext"] %>
   <%= image_tag(@forecast.at(6)["icon_url"]) %>
-
 </p>
+
+<div class="calendar"></div>
 
 <h2>Entries</h2>
   <%= render @trip.entries %>

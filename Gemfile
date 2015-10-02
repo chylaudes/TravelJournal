@@ -27,6 +27,7 @@ group :development, :test do
   gem 'annotate'
   gem 'spring'
   gem 'wunderground'
+  gem 'fullcalendar-rails'
 end
 
 # group :production do
